@@ -1,0 +1,158 @@
+body, html, head{
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	height: 80px;
+	position: fixed; /* requires you to specify certain things like width, no longer going to be in the layout of the normal thingy */
+	width: 100%;
+	background-color: black;
+	z-index: 10;
+}
+
+.logo{
+	width: 20%;
+	display: inline-block;
+	position: absolute;
+	left: 20px;
+}
+
+.logoimg{
+	height: 80px;
+}
+
+.menu{
+	width: 80%;
+	margin: 0;
+	display: inline-block;
+	line-height: 0;
+	position: absolute;
+	top:25px;
+	right: 0;
+}
+
+.nav ul{
+	list-style: none;
+}
+
+.nav a{
+	color: white;
+}
+
+.nav li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-weight: bold;
+	font-family: Arial;
+	color: #01a0c7;
+}
+
+.splash-container{
+	background: url("img/ball.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+	position:relative;
+	text-align: center;
+}
+
+.video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.splash-text{
+	top:45vh;
+	width: 100vw;
+	position:absolute;
+	left: 0;
+	right: 0;
+	color:white;
+}
+
+.mission-container{
+	background: url("img/stadium.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position:relative;
+	text-align: center;
+}
+
+.mission-text-container{
+	width: 60%;
+	position:absolute;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.mission-container h1{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+.mission-container p{
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+@media screen and (max-width:1300px){  /* this is the breakpoint */
+	.about-text h2, .about-text2 h2{
+		padding-top:20px;
+	}
+}
+
+@media screen and (max-width:1000px){  /* this is the breakpoint */
+	.kitchen{
+		width:100%;
+	}
+	.about-text{
+		width: 100%;
+	}
+
+	.about-text p{
+		padding:0;
+	}
+
+	.about-text h2{
+		padding: 0;
+	}
+
+	.menu-row2 {
+		display:none;
+	}
+
+	.menu-row3 {
+		display: block;
+	}
+}
+
+@media screen and (max-width:650px){  /* this is the breakpoint */
+	.about-h1{
+		font-size:30px;
+	}
+	.menu-item{
+		width:100%;
+	}
+}
