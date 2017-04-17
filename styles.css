@@ -1,4 +1,4 @@
-body, html, head{
+body, html, head h1{
 	margin: 0;
 	padding: 0;
 }
@@ -13,34 +13,36 @@ body, html, head{
 
 .logo{
 	width: 20%;
-	display: inline-block;
 	position: absolute;
-	left: 20px;
+	left: 100px;
+	top:10px;
+	margin: 0;
 }
 
 .logoimg{
-	height: 80px;
+	height: 60px;
+	margin: 0;
 }
 
 .menu{
-	width: 80%;
+	width: 75%;
 	margin: 0;
-	display: inline-block;
 	line-height: 0;
 	position: absolute;
 	top:25px;
-	right: 0;
+	right: 5px;
 }
 
-.nav ul{
+.menu ul{
 	list-style: none;
+	padding: 0;
 }
 
-.nav a{
+.menu a{
 	color: white;
 }
 
-.nav li {
+.menu li {
 	display: inline-block;
 	width: 20%;
 	text-align: center;
@@ -50,7 +52,7 @@ body, html, head{
 }
 
 .splash-container{
-	background: url("img/ball.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
+	/* background: url("img/ball.jpg") no-repeat center center; no repeat forces the img to fill the thingy */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -66,7 +68,7 @@ body, html, head{
   position: fixed;
   top: 50%; left: 50%;
   z-index: 0;
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
@@ -75,15 +77,27 @@ body, html, head{
 
 .splash-text{
 	top:45vh;
-	width: 100vw;
 	position:absolute;
 	left: 0;
 	right: 0;
 	color:white;
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.splash-text2{
+	top:50vh;
+	position:absolute;
+	left: 0;
+	right: 0;
+	color:white;
+	font-size: 100px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .mission-container{
-	background: url("img/stadium.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
+	background: url("img/baseball.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -104,16 +118,78 @@ body, html, head{
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     background-color: rgba(0,0,0,0.5);
+    padding-left:20px;
+    padding-right:20px;
+
 }
 
 .mission-container h1{
 	color: white;
 	font-size: 40px;
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
 .mission-container p{
 	color: white;
 	font-size: 25px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.why-section{
+	background: url("img/ball.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position:relative;
+	text-align: center;
+}
+
+.why-section h1{
+	padding-top: 30px;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.reasons-row {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 60px;
+	display: block;
+}
+
+.row-item {
+	width: 33%;
+	display: inline-block;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.pic-title {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.reasonsimg{
+	height: 200px;
+	margin: 0;
+}
+
+.faq-section{
+	background: url("img/stadium.jpg") no-repeat center center; /* no repeat forces the img to fill the thingy */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position:relative;
 	text-align: center;
 }
 
